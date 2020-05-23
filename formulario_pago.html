@@ -1,0 +1,165 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="fontawesome/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+ <script src="bootstrap/js/bootstrap.min.js"></script> <!– Llamamos al JavaScript de Bootstrap –>
+<link href="css/la-roca.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light laroca">
+        <a class="navbar-brand"href="Home.html"><img src="img/logo.png" alt="logo"></a>
+        <div class="datos-contacto2">
+            4588-1111<br>info@laroca.hotel.com.ar
+        </div>
+        <img src="img/iconos-sociales.png" alt="idiomas" class="iconos-sociales2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link " href="#">INICIO <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="#">HABITACIONES</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="#">SERVICIOS</a>
+                </li>
+                <li class="nav-item active sin-borde">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">UBICACION</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="datos-contacto">
+            4588-1111<br>info@laroca.hotel.com.ar
+        </div>
+        <img src="img/iconos-sociales.png" alt="idiomas" class="iconos-sociales">
+
+    </nav>
+
+    <!--Carousel Wrapper-->
+
+    <div class="container p-5">
+        <div class="row justify-content-md-center ">
+            <div class="col-lg-4">
+                <div class="card bg-roca">
+                    <div class="card-body">
+                        <div class="col-md-12 text-center text-white">
+                            <h3 class="titulo">Habitación<br /> <b>GOLDEN CAVE</b></h3>
+                            <hr class="hr-white" />
+                            <img src="img/habitacion1.jpg" class="img-fluid" alt="habitacion Golden cave">
+                            <hr class="hr-white" />
+                            <label class="text-light">Precio</label>
+                            <h3 class="bg-light rounded text-secondary py-2"><i class="fas fa-dollar-sign pr-2"></i>28.000</h3>
+                            <hr class="hr-white" />
+                            <label class="text-light">Descripción</label>
+                            <h6><i class="fa fa-user-friends pr-2"></i>2 personas</h6>
+                            <h6><i class="fas fa-concierge-bell pr-2"></i>Pensión completa</h6>
+                            <hr class="hr-white" />
+                            <label class="text-light">Salida</label>
+                            <h5><i class="fa fa-calendar-alt pr-2"></i>Sábado 23/11/19</h5>
+                            <label class="text-light">Llegada</label>
+                            <h5><i class="fa fa-calendar-alt pr-2"></i>Viernes 29/11/19</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                 
+            <div class="col-lg-8">
+                <div class="row p-3">
+                    <div class="col-lg-6 d-flex align-items-end">
+                        <h3 class="titulo d-inline text-danger align-bottom font-weight-bold ">Datos de pago</h3>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center justify-content-end d-flex">
+                            <div class="mp-2">
+                                <img alt="tarjeta de credito visa" src="img/tarjeta2.png" class="img-fluid">
+                                <img alt="Tarjeta de credito mastercard" src="img/tarjeta3.png" class="img-fluid">
+                                <img alt="Tarjeta de credio american express" src="img/tarjeta4.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title titulo text-secondary"> • Comprador</h5>
+                        <div class="row p-2 bg-secondary text-white my-3">
+                            <div class="form-group col-md-6 col-lg-6 mb">
+                                <label class="text-secondary">Nombre y apellido</label><br />
+                                <i class="fas fa-user form-control-filtro"> |</i>
+                                <input class="form-filtro" type="text" placeholder="Jennifer Yolanda Peluda" />
+                            </div>
+                            <div class="form-group col-md-6 col-lg-6 mb">
+                                <label class="text-secondary">E-mail</label><br />
+                                <i class="fas fa-envelope form-control-filtro"> |</i>
+                                <input class="form-filtro" type="text" placeholder="jenny.04@gmail.com" />
+                            </div>
+                            <div class="form-group col-md-6 col-lg-6 mb">
+                                <label class="text-secondary">Dirección</label><br />
+                                <i class="fas fa-map-marker-alt  form-control-filtro"> |</i>
+                                <input class="form-filtro" type="text" placeholder="Park Avenue 123" />
+                            </div>
+                            <div class="form-group col-md-6 col-lg-6 mb">
+                                <label class="text-secondary">Provincia</label><br />
+                                <i class="fas fa-paragraph form-control-filtro"> |</i>
+                                <input class="form-filtro" type="text" placeholder="Buenos Aires" />
+                            </div>
+                        </div>
+                        
+                            <h5 class="card-title titulo text-secondary">• Datos de la tarjeta</h5>
+                           <hr />
+                            <div class="row p-2">
+                                <div class="form-group col-md-6 col-lg-6 mb">
+                                    <label>Tipo</label><br>
+                                    <i class="fas fa-credit-card form-control-filtro"> |</i>
+                                    <select class="form-filtro">
+                                        <option>Tarjeta de crédito</option>
+                                        <option>Tarjeta de débito</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-md-6 col-lg-6 mb">
+                                    <label>Número de tarjeta</label><br />
+                                    <i class="fas fa-hashtag form-control-filtro"> |</i>
+                                    <input class="form-filtro" type="text" />
+                                </div>
+
+                                <div class="form-group col-md-6 col-lg-6 mb">
+                                    <label>Fecha de vencimiento</label><br />
+                                    <i class="fas fa-calendar-alt form-control-filtro"> |</i>
+                                    <input class="form-filtro" type="text" />
+                                </div>
+
+                                <div class="form-group col-md-6 col-lg-6 mb">
+                                    <label>Código de seguridad</label><br />
+                                    <i class="fas fa-key form-control-filtro"> |</i>
+                                    <input class="form-filtro" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                            <div class="mt-5 float-right">
+                                <button type="button" class="btn btn-secondary ml-4 mb-3">Cancelar</button>
+                                <button type="button" class="btn btn-danger ml-4 mb-3">Finalizar compra</button>
+                            </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small blue pt-4 sticky-bottom ">
+        <div class="footer-copyright text-center pt-5 pb-3" >
+            <h5 class="text-light" ><i class="fa fa-phone pr-2"></i> <b>4455-1126  </b> | <a class="text-light" href="#"><i class="far fa-envelope-open px-2"></i>  info@LaRoca.Hotel.com.ar</a></h5>
+        </div>
+
+    </footer>
+</body>

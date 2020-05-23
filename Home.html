@@ -1,0 +1,281 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="fontawesome/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+<script src="bootstrap/js/bootstrap.min.js"></script> <!– Llamamos al JavaScript de Bootstrap –>
+<link href="css/la-roca.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light laroca">
+        <a class="navbar-brand" href="Home.html"><img   class="img-fluid" src="img/logo.png" alt="logo"></a>
+        <div class="datos-contacto2">
+            4588-1111<br>info@laroca.hotel.com.ar
+        </div>
+        <img src="img/iconos-sociales.png" alt="idiomas" class="iconos-sociales2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link " href="#">INICIO <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="#">HABITACIONES</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="#">SERVICIOS</a>
+                </li>
+                <li class="nav-item active sin-borde">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">UBICACION</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="datos-contacto">
+            4588-1111<br>info@laroca.hotel.com.ar
+        </div>
+        <img src="img/iconos-sociales.png" alt="idiomas" class="iconos-sociales">
+
+    </nav>
+
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="view">
+                    <img class="d-block w-100" src="img/hotel1.jpg">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Hotel La Roca</h3>
+                    <p>Brinda una vista excepcional y experiencias únicas</p>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100" src="img/hotel2.jpg" alt="Second slide">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Habitaciones compartidas</h3>
+                    <p>Comodidad y lujo a tu alcance</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100" src="img/hotel3.jpg">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Habitaciones privadas</h3>
+                    <p>La mejor ambientación, integrando lo antiguo y lo moderno</p>
+                </div>
+            </div>
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <section>
+            <form>
+                <div class="row justify-content-md-center bg-roca my-1 mx-0 px-5 py-4 w-100">
+                    <div class="col-md-3   text-center mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Check in:</span>
+                            </div>
+                            <input type="date" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 text-center mb-3">
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Check out:</span>
+                            </div>
+                            <input type="date" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center mb-4">
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-users"></i></span>
+                            </div>
+                            <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="Cant. personas">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 text-center mb-2">
+                        <a href="reserva_online.html" class="btn btn-danger"> Reservar on-line</a>
+                        <!--                        <a href="#" class="btn btn-danger">Reservar on-line</a>-->
+                    </div>
+
+                </div>
+            </form>
+    </section>
+
+    <main>
+
+        <div class="elements container ">
+            <div class="row  ">
+                <div class="col-md-auto col-lg-12 mt-5 mb-2">
+                    <h4 class="text-danger titulo"> <i class="fas fa-bed pr-2"></i>Habitaciones</h4>
+                    <hr />
+                </div>
+            </div>
+            <div class="row justify-content-md-center habitaciones-index">
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="img/habitacion1.jpg" class="img-fluid img-header" alt="habitacion Golden cave">
+                        <div class="card-body ">
+                            <h5 class="text-warning font-weight-bold">| Golden Cave </h5>
+                            <p class="text-secondary">Habitación para 2 personas, acompañada de sillas y amplio espacio para moverse.</p>
+                            <hr />
+                            <a href="habitacion.html" class="btn btn-warning">Ver más </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="img/habitacion2.jpg" class="img-fluid img-header" alt="...">
+                        <div class="card-body">
+                            <h5 class="text-warning font-weight-bold">| Luxury cave</h5>
+                            <p class="text-secondary">Habitación con 3 camas de plaza y media cada una, con una maravillosa vista.</p>
+                            <hr />
+                            <a href="#" class="btn btn-warning">Ver más </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="img/habitacion3.jpg" class="img-fluid img-header" alt="...">
+                        <div class="card-body">
+                            <h5 class="text-warning font-weight-bold">| Deep cave</h5>
+                            <p class="text-secondary">Habitación para familias o amigos. Lugar amplio y lujoso, con todas las comodidades necesarias.</p>
+                            <hr />
+                            <a href="#" class="btn btn-warning">Ver más </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="elements container mt-5">
+            <div class="row mb-1 ">
+                <div class="col-md-auto col-lg-12 mt-5 mb-2">
+                    <h4 class="text-danger titulo"> <i class="fas fa-hotel pr-2"></i>Servicios</h4>
+                    <hr />
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center mb-2">
+                <div class="col-md-8 text-center mt-3">
+                    <img src="img/servicio1.jpg" class="img-fluid img-body" alt="imagen de restaurante">
+                </div>
+                <div class="col-md-4 p-2 bloque-centrado">
+                    <h5 class="text-warning"> <i class="fas fa-utensils mr-2"></i>RESTAURANT </h5> 
+                    <div class="d-none icono-visible text-center float-right mr-5  text-secondary align-items-center"><i class=" fa fa-plus-circle mr-2"></i><h5 class="mb-0"><a  class="text-secondary" href="#">Más info</a></h5> </div>
+                    <p>• Comidas típicas de la región</p>
+                    <p>• Chef internacional</p>
+                    <p>• Bar las 24hs</p>
+                </div>
+            </div>
+            <br />
+            <div class="row justify-content-md-center mb-2">
+                <div class="col-md-8 text-center mt-3 ">
+                    <img src="img/servicio2.jpg" class="img-fluid img-body" alt="Piscina artificial en una cueva">
+                </div>
+                <div class="col-md-4 p-2 bloque-centrado">
+                    <h5 class="text-warning"><i class="fas fa-swimming-pool mr-2"></i>PISCINA/SPA</h5>
+                    <div class="d-none icono-visible text-center float-right mr-5  text-secondary align-items-center"><i class=" fa fa-plus-circle mr-2"></i><h5 class="mb-0"><a  class="text-secondary" href="#">Más info</a></h5> </div>
+                    <p>• Tres Diferentes piscinas artificiales en las rocas.</p>
+                    <p>• SPA, masajes descontracturantes y aromaterapia.</p>
+                </div>
+            </div>
+            <br />
+
+            <div class="row justify-content-md-center mb-2 servicios-index">
+                <div class="col-md-8 text-center mt-3">
+                    <img src="img/servicio3.jpg" class="img-fluid img-body" alt="foto de una expedicion">
+                </div>
+                <div class="col-md-4 p-2 bloque-centrado">
+                    <h5 class="text-warning"><i class="fas fa-swimmer mr-2"></i>EXPEDICIONES Y ESPELEOBUCEO</h5>
+                    <div class="d-none icono-visible text-center float-right mr-5  text-secondary align-items-center"><i class=" fa fa-plus-circle mr-2"></i><h5 class="mb-0"><a class="text-secondary" href="#">Más info</a></h5> </div>
+                    <p>• Expediciones guiadas por profesionales.</p>
+                    <p>• Buceo con equipamiento completo.</p>
+                    <p>• Acampe en la cueva "El Guacharo".</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="elements container mt-5 pb-5">
+            <div class="row mb-1">
+                <div class="col-md-auto col-lg-12 mt-5 mb-2">
+                    <h4 class="text-danger titulo"><i class="fas fa-map-marked-alt mr-2"></i>Ubicación</h4>
+                    <hr />
+                </div>
+            </div>
+            <div class="ubicacion">
+                <div class="mapadiv row row justify-content-md-center">
+                    <div class="col-md-4 mt-4">
+                        <p><b>Hotel La Roca</b> está situado en una zona con paisaje montañoso y de relieve accidentado, con valles estrechos y vertientes inclinadas.</p>
+                        <p>Los huéspedes podrán visitar uno de los parques nacionales más famosos de Venezuela, como lo es el <b>Parque Nacional El Guacharo</b> con 62.700 ha distribuidas en 15.500 ha. en el sector Negro Negro y 47.200 ha en la Cuenca Media del Río Caripe.</p>
+                    </div>
+                    <div class="col-md-8 mt-3 ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d8067578.238753859!2d-63.9379276!3d9.1321326!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1573499882433!5m2!1ses-419!2sar" width="632" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <br>
+
+                <div class=" row row justify-content-md-center mt-1">
+                    <div class="col-md-4 ">
+                        <img src="img/ubicacion1.jpg" class="img-fluid rounded" alt="imagen con vista del cerro">
+                    </div>
+                    <div class="col-md-4 ">
+                        <img src="img/ubicacion2.jpg" class="img-fluid rounded" alt="imagen de una expedicion en cavernas">
+                    </div>
+                    <div class="col-md-4 ">
+                        <img src="img/ubicacion3.jpg" class=" img-fluid rounded" alt="imagen de un oso">
+                    </div>
+                </div>
+            </div>
+            <br />
+        </div>
+    </main>
+
+    <footer id="footer-home" class="page-footer font-small blue pt-4 sticky-bottom ">
+        <div class="footer-copyright text-center pt-5 pb-3">
+            <h5 class="text-light"><i class="fa fa-phone pr-2"></i> <b>4455-1126  </b> | <a class="text-light" href="#"><i class="far fa-envelope-open px-2"></i>  info@LaRoca.Hotel.com.ar</a></h5>
+        </div>
+    </footer>
+</body>
